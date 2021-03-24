@@ -7,7 +7,7 @@ body {
   color: #fff;
   font-size: 16px;
   line-height: 1.42857143;
-  background: #1e2736 url(/content/img/mountain.jpg) 50% 0% no-repeat;
+  background: #1e2736 url(../content/img/mountain.jpg) 50% 0% no-repeat;
   background-size: 100%;
 }
 
@@ -161,7 +161,7 @@ body {
 }
 
 .video {
-  background: url(/content/img/bg-data.png) 50% 0% no-repeat;
+  background: url(../content/img/bg-data.png) 50% 0% no-repeat;
 }
 
 .video .container {
@@ -477,7 +477,7 @@ body {
 
 .online .pin {
   left: 0;
-  background: url("/content/img/pin-online.png") 50% 50% no-repeat;
+  background: url("../content/img/pin-online.png") 50% 50% no-repeat;
   color: #17d4fb;
 }
 
@@ -497,7 +497,7 @@ body {
 
 .slots .pin {
   right: 0;
-  background: url("/content/img/pin-slots.png") 50% 50% no-repeat;
+  background: url("../content/img/pin-slots.png") 50% 50% no-repeat;
   color: #11cc1a;
 }
 
