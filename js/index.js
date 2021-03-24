@@ -12,7 +12,6 @@ $(document).ready(function () {
         email_text = email.val();
         
         $.ajax({
-            url: '//formspree.io/o.redchenko90@gmail.com',
             method:'POST',
             data: {
                 name: name_text,
