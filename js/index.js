@@ -12,7 +12,7 @@ $(document).ready(function () {
         email_text = email.val();
         
         $.ajax({
-            url: '//formspree.io/o.redchenko90@gmail.com',
+            url:'https://formspree.io/f/xqkwzleo',
             method:'POST',
             data: {
                 name: name_text,
@@ -21,7 +21,7 @@ $(document).ready(function () {
             dataType: 'json'
         }).done(function(){
             alert('Данные отправлены');
-            form.reset()
+            form.trigger('reset')
         }).fail(function(){
             alert('Ошибка')
         })
