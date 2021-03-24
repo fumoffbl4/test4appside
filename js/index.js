@@ -3,8 +3,8 @@ $(document).ready(function () {
     const form = $('form');
     form.on('submit', formSend);
 
-    async function formSend (e) {
-        e.preventDefault();
+    async function formSend (event) {
+        event.preventDefault();
 
         let name = $('input[name=name]'),
         name_text = name.val(),
@@ -12,7 +12,6 @@ $(document).ready(function () {
         email_text = email.val();
         
         $.ajax({
-            url:'https://formspree.io/addr@example.com',
             method:'POST',
             data: {
                 name: name_text,
@@ -20,10 +19,11 @@ $(document).ready(function () {
             },
             dataType: 'json'
         }).done(function(){
-            alert('Данные отправлены')
+            alert('Данные отправлены');
+            form.reset()
         }).fail(function(){
             alert('Ошибка')
-        });
+        })
     };
 
 
